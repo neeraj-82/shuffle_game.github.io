@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  width: 45%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  flex: .5;
+  display: flex;
+  flex-direction: column;
+  padding: .5em; }
+  header .game_name {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em; }
+  header .score {
+    flex: .5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: .5em; }
+
+.selection_part {
+  flex: 2;
+  display: flex;
+  padding: .5em; }
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  form .select {
+    flex: 1;
+    display: flex; }
+    form .select .select_name {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: .5em; }
+    form .select .select_btn {
+      flex: .5;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: .5em; }
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.game_area {
+  width: 50%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column; }
+
+.result {
+  flex: 2;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.click {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.intro {
+  display: flex;
+  width: 100%;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white; }
+  .intro .first {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 1px;
+    animation: jump 2s linear infinite; }
+  .intro .sec {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: jump 2s linear infinite;
+    letter-spacing: 1px; }
+  .intro .third {
+    flex: 2;
+    animation: jump 2s linear infinite;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 1px; }
+
+.play_field {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  min-height: 320px; }
+
+.word_area {
+  flex: 3;
+  display: flex;
+  flex-direction: column; }
+  .word_area .time {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .word_area .word {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em; }
+
+.input_area {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em; }
+
+section {
+  background: #2b580c; }
+
+.game_name i {
+  font-size: 22px;
+  color: #e7de3a;
+  margin-right: 5px;
+  animation: rotate 5s linear; }
+
+.game_name h1 {
+  color: #f7b71d;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: rotate 5s linear; }
+
+.score h3 {
+  color: #e7de3a;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.select {
+  border-bottom: 1px solid #f7b71d; }
+
+.select_name h3 {
+  color: #fdef96;
+  letter-spacing: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: opacity 3s linear; }
+
+.select_btn button {
+  transition: .2s;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  outline: none;
+  animation: opacity 5s linear;
+  border: none;
+  background: #fdef96;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+.click .play {
+  transition: .2s;
+  padding: 20px 30px 20px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #071e3d;
+  background-color: palegoldenrod;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.play_field .word_area {
+  box-shadow: 0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0, 0, 0, 0.2); }
+  .play_field .word_area h1 {
+    color: #e7de3a;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px; }
+  .play_field .word_area h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e7de3a;
+    letter-spacing: 1px; }
+  .play_field .word_area .time .timer {
+    padding: 1.2em;
+    font-weight: bold;
+    background-color: #f7b71d;
+    font-size: 40px;
+    color: #2b580c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 50%;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1), inset 0 -10px 10px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 10px 10px black; }
+
+.play_field .input_area .answer {
+  padding: 20px;
+  color: #2b580c;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  text-align: center; }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes rotate {
+  0% {
+    transform: translateY(-200px); }
+  50% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(0px); } }
+
+.select_btn button:hover {
+  letter-spacing: 5px; }
+
+.click .play:hover {
+  letter-spacing: 10px; }
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px); }
+  25% {
+    transform: translateY(-30px); }
+  50% {
+    transform: translateY(-80px); }
+  75% {
+    transform: translateY(-120px); }
+  100% {
+    transform: translateY(0px); } }
+
+@media screen and (max-width: 975px) {
+  .container {
+    width: 60%; }
+  .game_area {
+    width: 60%; } }
+
+@media screen and (max-width: 765px) {
+  .container {
+    width: 80%; }
+  .game_area {
+    width: 90%; } }
+
+@media screen and (max-width: 575px) {
+  .game_area .intro {
+    font-size: 25px; } }
+
+@media screen and (max-width: 475px) {
+  .container {
+    width: 100%; }
+  .game_area {
+    width: 100%; }
+    .game_area .intro {
+      font-size: 18px; }
+  .select_name h3 {
+    font-size: 16px; }
+  .select_btn button {
+    padding: 10px 10px 10px 10px; } }

@@ -1,0 +1,57 @@
+@media screen and(max-width:975px){
+
+    .container{
+
+    width: 60%;
+    }
+    .game_area{
+        width: 60%;
+    }
+
+}
+@media screen and(max-width:765px){
+
+    .container{
+
+    width: 80%;
+    }
+    .game_area{
+        width: 90%;
+    }
+}
+@media screen and(max-width:575px){
+    .game_area
+    {
+        .intro{
+                font-size: 25px;
+        }
+    }
+}
+@media screen and(max-width:475px){
+
+    .container{
+
+    width: 100%;
+    }
+    .game_area{
+        width: 100%;
+
+        .intro{
+            font-size: 18px;
+        }
+    }
+
+    .select_name
+    {
+        h3{
+            font-size: 16px;
+        }
+    }
+    .select_btn
+    {
+        button{
+            padding: 10px 10px 10px 10px;
+        }
+       
+    }
+}

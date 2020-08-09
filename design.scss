@@ -1,0 +1,125 @@
+section{
+    background: $color;
+}
+.game_name
+{
+    i{
+        font-size: 22px;
+        color: $color2;
+        margin-right: 5px;
+        animation: rotate 5s linear;
+    }
+    h1{
+        color: $header;
+        letter-spacing: 2px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: rotate 5s linear;
+    }
+}
+.score{
+    h3{
+        color:$color2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+.select{
+    border-bottom: 1px solid $header;
+}
+.select_name
+{
+    h3{
+        color: $score;
+        letter-spacing: 1px;
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        animation: opacity 3s linear;
+    }
+}
+.select_btn
+{
+    button{
+        transition: .2s;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        outline: none;
+        animation: opacity 5s linear;
+        border: none;
+        background: $score;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+       border-radius: 10px;
+       letter-spacing: 1px;
+        font-weight: bold;
+    }
+    
+}
+.click{
+        .play{
+            transition: .2s;
+            padding: 20px 30px 20px 30px;
+            outline: none;
+            border: none;
+           
+            cursor: pointer;
+            color: $play;
+            background-color: palegoldenrod;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+}
+.play_field
+{
+    .word_area{
+        box-shadow:  0px -10px 5px rgba(255, 255, 255, 0.1), 0px 15px 15px rgba(0,0,0,0.2);
+           
+
+        h1{
+            color: $color2;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+        
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: $color2;
+            letter-spacing: 1px;
+        }
+        .time
+        {
+            .timer
+            {
+             
+                padding:1.2em;
+                font-weight: bold;
+                background-color: $header;
+                font-size: 40px;
+                color: $color;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border-radius: 50%;
+                box-shadow:  0 -10px 10px rgba(255, 255, 255, 0.1),
+        inset 0 -10px 10px rgba(255,255,255,0.1),
+         0 10px 10px rgba(0,0,0,0.2),
+         inset 0 10px 10px rgba(0,0,0,02);
+            }
+        }
+    }
+    .input_area{
+       
+        .answer{
+            padding: 20px;
+            color: $color;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            text-align: center;
+
+        }
+      
+    }
+}
